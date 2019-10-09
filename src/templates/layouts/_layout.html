@@ -1,0 +1,45 @@
+{% import "partials/_mixins.html" as mixins %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}Komunitas IT Pekanbaru, Kongkow IT Pekanbaru, Event terbaru, Event IT Pekanbaru{% endif %}" />
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Kongkow IT Pekanbaru merupakan wadah diskusi, belajar dan sharing para pengiat IT, mahasiswa,pelajar, praktisi dan akademisi.{% endif %}" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" href="css/style.css?20052019" />
+	<meta property="og:url" content="https://kongkowitpku.id"/>
+	<meta property="og:title" content="Kongkow IT Pekanbaru"/>
+	<meta property="og:description" content="Kongkow IT Pekanbaru merupakan wadah diskusi, belajar dan sharing para pengiat IT, mahasiswa,pelajar, praktisi dan akademisi."/>
+	<meta property="og:image" content="https://kongkowitpku.id/pic/og-image2.jpg"/>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	{% block content %}
+	{% endblock %}
+
+</div>
+
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c4635380bd2bccaefd3e10c69/5acc80ec43411ab6bca4da56b.js");</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2en6');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
