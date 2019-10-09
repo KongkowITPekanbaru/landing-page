@@ -1,0 +1,28 @@
+		<section class="section sponsors" id="sponsors">
+
+			<div class="container">
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>P</span></span>artners
+						</h3>
+					</div>
+
+					<div class="section__head-r">
+						<div class="section__desc">Silahkan tambah logo komunitas kamu melalui repository website ini untuk saling mendukung sesama komunitas!</div>
+						<div class="section__desc"><a href="https://github.com/KongkowITPekanbaru/landing-page">Link repository website ini</a></div>
+					</div>
+				</div>
+
+				<div class="sponsors-list">
+					{% for item in sponsors %}
+					{{mixins.sponsors({
+						title: item.title,
+						mod: item.mod,
+						logos: item.logos,
+						last: item.last
+					})}}
+					{% endfor %}
+				</div>
+			</div>
+		</section>

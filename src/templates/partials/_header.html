@@ -1,0 +1,73 @@
+	<button class="menu-toggle">
+		<span></span>
+		<span></span>
+	</button>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				<div class="logo-mini ir">
+					<a href="/" class="logo-mini__link">Kongkow IT Pekanbaru</a>
+				</div>
+			</div>
+
+			<div class="header__nav">
+				<nav class="nav">
+					{% if inner %}
+			            <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
+						<li class="nav__item"><a class="nav__link" href="/#workshops">Event Terbaru</a></li>
+						<li class="nav__item"><a class="nav__link js-scroll-to" href="/lowongan-kerja">Lowongan Kerja</a></li>
+			            {% if not pageKEREN %}<li class="nav__item"><a class="nav__link js-scroll-to" href="/#sponsors">Partner</a></li>{% endif %}
+						{% else %}
+			            <li class="nav__item"><a class="nav__link js-scroll-to" href="#event">About</a></li>
+			            <li class="nav__item"><a class="nav__link js-scroll-to" href="/member">Member</a></li>
+			            <li class="nav__item"><a class="nav__link js-scroll-to" href="#schedule">Artikel</a></li>
+			            <li class="nav__item"><a class="nav__link js-scroll-to" href="#workshops">Event Terbaru</a></li>
+<!--			            <li class="nav__item"><a class="nav__link js-scroll-to" href="#give-back">Diversity</a></li>-->
+			            <li class="nav__item"><a class="nav__link js-scroll-to" href="/lowongan-kerja">Lowongan Kerja</a></li>
+			            <li class="nav__item"><a class="nav__link js-scroll-to" href="#sponsors">Partner</a></li>
+					{% endif %}
+				</nav>
+			</div>
+
+			<div class="header__scls">
+				<ul class="scls">
+					<li class="scls__item">
+						<a href="https://github.com/KongkowITPekanbaru" target="_blank" class="scls__link">
+							<svg class="scls__img sclgh" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#sclgh"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="scls__item">
+						<a href="https://t.me/kongkowITpekanbaru" target="_blank" class="scls__link">
+							<svg class="scls__img scltel" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#scltel"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="scls__item">
+						<a href="https://www.instagram.com/kongkowitpekanbaru" target="_blank" class="scls__link">
+							<svg class="scls__img sclig" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#sclig"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="scls__item">
+						<a href="https://www.facebook.com/kongkowITpekanbaru" target="_blank" class="scls__link">
+							<svg class="scls__img sclfb" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#sclfb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="scls__item">
+						<a href="https://medium.com/kongkowitpekanbaru" target="_blank" class="scls__link">
+							<svg class="scls__img sclmed" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#sclmed"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header><!-- .header -->
