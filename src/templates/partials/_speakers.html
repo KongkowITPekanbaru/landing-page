@@ -1,0 +1,30 @@
+		<section class="section speakers" id="speakers">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial a">A</span>nggota
+						</h3>
+					</div>
+
+					<div class="section__head-r">
+						<p class="section__desc">Kongkow IT Pekanbaru merupakan wadah diskusi, belajar dan sharing para pengiat IT, mahasiswa,pelajar, praktisi dan akademisi.</p>
+					</div>
+				</div>
+
+				<div class="team">
+					{% for item in speakers %}
+						{{mixins.speaker({
+							img: item.img,
+							name: item.name,
+							company: item.company,
+							info: item.info,
+							tag: item.tag,
+							scls: item.scls
+						})}}
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+
