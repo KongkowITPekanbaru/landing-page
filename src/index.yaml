@@ -1,0 +1,11 @@
+ProjectTitle: kongkow-it-pekanbaru
+
+PageList:
+- file: index.html
+  ready: 50
+- file: event-terbaru.html
+  ready: 50
+- file: lowongan-kerja.html
+  ready: 50
+- file: member.html
+  ready: 50
