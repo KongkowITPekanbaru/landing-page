@@ -1,0 +1,25 @@
+<section class="section schedule" id="schedule">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>A</span></span>rtikel
+						</h3>
+					</div>
+				</div>
+
+				<ul class="schedule-list js-tabs__panel active" id="general-panel">
+					{% for item in scheduleEast %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
+				</ul>
+
+			</div>
+		</section>
