@@ -8,5 +8,10 @@
         "use": "@now/static-build",
         "config": { "distDir": "build" }
       }
+    ],
+    "routes": [
+      { "src": "/event-terbaru", "dest": "/event-terbaru.html" },
+      { "src": "/lowongan-kerja", "dest": "/lowongan-kerja.html" },
+      { "src": "/member", "dest": "/member.html" }
     ]
   }
