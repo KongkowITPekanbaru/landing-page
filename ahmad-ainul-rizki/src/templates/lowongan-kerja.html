@@ -1,0 +1,43 @@
+---
+title: Lowongan Kerja Terbaru di Pekanbaru
+keywords: 'kerja, lowongan kerja, it, pekanbaru, lowongan kerja pekanbaru, kerja it'
+description: "Kami menyediakan beberapa list lowongan pekerjaan terbaru di Pekanbaru."
+innerPage: true
+followUsTall: true
+inner: true
+statos: true
+
+intro: {
+	mod: 'height-auto',
+	logoMod: 'short',
+	desc: 'Lowongan kerja di<br/><span>Pekanbaru</span>',
+	stats: [
+		{
+			num: '14',
+			desc: 'Partners'
+		}, {
+			num: '20+',
+			desc: 'Job offers'
+		}
+	]
+}
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+
+	<main class="content">
+		{% include "partials/_intro.html" %}
+
+		{% include "partials/_cards.html" %}
+
+		{% include "partials/_follow.html" %}
+		<!-- .content -->
+	</main>
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}

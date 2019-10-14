@@ -1,0 +1,109 @@
+---
+title: Event Terbaru - Kongkow IT Pekanbaru
+followUsTall: true
+inner: true
+
+intro: {
+	mod: 'height-auto',
+	logoMod: 'short',
+	desc: 'KOMPULAN EVENT IT<br/><span>TERBARU SE-INDONESIA</span>',
+	stats: [
+		{
+			num: '2',
+			desc: 'Event Aktif'
+		}, {
+			num: '8',
+			desc: 'Event Selesai'
+		}
+	]
+}
+
+cards: [
+	{
+		img: 'event-hacktoberfest-2019.png',
+		title: 'Hacktoberfest 2019',
+		descr: "<p>Hacktoberfest adalah acara tahunan yang bertujuan untuk mendorong berkontribusi kedalam ekosistem <i>open source</i>. Acara ini bebas untuk siapa saja, baik untuk pemula hingga professional sekalipun, berlangsung mulai dari tanggal 1 oktober hingga 31 oktober.</p>
+		<p>Benefit Mengikuti Hacktoberfest 2019:</p>
+		<ul class='dotted-list'>
+			<li class='dotted-list__item'>Mendapatkan Swag (T-shirt & sticker) dari hacktoberfest (50.000 contributor pertama)</li>
+			<li class='dotted-list__item'>Memahami cara berkontribusi ke ekosistem open source</li>
+			<li class='dotted-list__item'>Memahami workflow dari ekosistem opensource</li>
+		</ul>
+		<p>Waktu: 01-31 Oktober 2019</p>",
+		link: 'https://hacktoberfest.digitalocean.com/'
+	},{
+		img: 'event-wordvector.jpg',
+		title: 'Data Science Indonesia',
+		descr: "<p>Jika &quot;Riau adalah Pekanbaru&quot;, maka &quot;Bali adalah ...?&quot;</p>
+		<p>Kalau pertanyaan tersebut kita ajukan ke manusia tentu dengan mudah kita akan menjawab &quot;Denpasar&quot; bukan?, tapi bagaimana jika pertanyan tersebut kita tanyakan ke mesin?</p>
+		<p>Di <a href='https://www.instagram.com/explore/tags/datacourse2/'>#DataCourse2</a> kali ini, DSI Pekanbaru akan mengupas cara mengambil wawasan dari kumpulan corpus (collection text) sebagai knowledge (wawasan) mesin agar bisa berlaku &quot;cerdas&quot;. &quot;Word Vector Representation with Word2Vec&quot;</p>
+		<ul class='dotted-list'>
+			<li class='dotted-list__item'>Pemateri : Rezki Nasrullah, S.Kom</li>
+			<li class='dotted-list__item'>Hari, Tanggal : Sabtu, 12 Oktober 2019</li>
+			<li class='dotted-list__item'>Waktu : 14.00 - 17.00 WIB</li>
+			<li class='dotted-list__item'>Tempat : DILo Pekanbaru, Jl. Kinibalu No. 14, Sail - Pekanbaru</li>
+		</ul>
+		<p>Catatan:</p>
+		<ul class='dotted-list'>
+			<li class='dotted-list__item'>Membawa laptop dan mempunyai akun google (untuk menggunakan Google Colab)</li>
+			<li class='dotted-list__item'>Peserta yang mendaftar hanya untuk yang bisa datang dan tepat waktu</li>
+		</ul>",
+		link: 'https://bit.ly/dataCourse2'
+	}
+]
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+
+	<main class="content">
+
+		{% include "partials/_intro.html" %}
+
+		{% include "partials/_event.html" %}
+
+		<section class="section black">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title">
+							<span class="initial b"><span>B</span></span>ebas kontribusi
+						</h3>
+					</div>
+
+					<div class="section__head-r">
+
+						<ul class="dashed-list">
+							<li class="dashed-list__item">From IT Lover to IT Lovers</li>
+							<li class="dashed-list__item">Open Source</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ws-desc">
+					<div class="ws-desc__left">
+						<h4 class="ws-desc__title">Jika kamu memiliki event</h4>
+						<p class="ws-desc__p">Jika kamu membuat event atau mempunyai informasi tentang event IT terbaru, silahkan submit Pull Request(PR) ke <a href='https://github.com/KongkowITPekanbaru/landing-page'>repository website ini</a> dan ikuti tutorial yang sudah diberikan. Jika ada kesulitan dalam mengirim PR harap hubungi admin Kongkow IT Pekanbaru melalui Telegram.</p>
+					</div>
+
+					<div class="ws-desc__left">
+						<h4 class="ws-desc__title">Jika kamu seorang praktisi</h4>
+						<p class="ws-desc__p">Jika kamu seorang ahli, praktisi atau ingin menyumbangkan materi melalui Kuliah Telegram(KulGram). Silahkan hubungi admin Kongkow IT Pekanbaru maka kami akan se-segera mungkin mencarikan kamu event yang tepat.</p>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		{% include "partials/_follow.html" %}
+
+	</main>
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}
