@@ -3,6 +3,9 @@
   "description": "The official Kongkow IT Pekanbaru website",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "ghpages": "git subtree push --prefix build origin gh-pages",
     "build": "gulp build --production",
