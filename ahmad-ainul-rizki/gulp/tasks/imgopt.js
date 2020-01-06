@@ -1,0 +1,31 @@
+var imagesSRC         = './src/img/**/*.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF,svg,SVG}'; // Source folder of images which should be optimized.
+var imagesDestination = './src/hasil-img/'; // Destination folder of optimized images. Must be different from the imagesSRC folder.
+
+var gulp     = require( 'gulp' ); // Gulp of-course
+var imagemin = require( 'gulp-imagemin' ); // Minify PNG, JPEG, GIF and SVG images with imagemin.
+var notify   = require( 'gulp-notify' ); // Sends message notification to you
+
+/**
+ * Task: `imgopt`.
+ *
+ * Minifies PNG, JPEG, GIF and SVG images.
+ *
+ * This task does the following:
+ *     1. Gets the source of images raw folder
+ *     2. Minifies PNG, JPEG, GIF and SVG images
+ *     3. Generates and saves the optimized images
+ *
+ * This task will run only once, if you want to run it
+ * again, do it with the command `gulp imgopt`.
+ */
+gulp.task( 'imgopt', function() {
+	gulp.src( imagesSRC )
+		.pipe( imagemin({
+			progressive: true,
+			optimizationLevel: 3, // 0-7 low-high
+			interlaced: true,
+			svgoPlugins: [{removeViewBox: false}]
+		}))
+		.pipe( gulp.dest( imagesDestination ) )
+		.pipe( notify( { message: 'DONE: Images Optimized! 💯', onLast: true } ) );
+} );

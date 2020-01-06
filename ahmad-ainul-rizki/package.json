@@ -45,6 +45,7 @@
     "gulp-hash": "^4.2.2",
     "gulp-hash-references": "^3.0.1",
     "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-include": "^2.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-nunjucks-render": "^2.0.0",
