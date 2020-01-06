@@ -31,7 +31,10 @@ node_modules
 bower_components
 
 build
+
+# Files to ignore
 minifestjs.json
 minifestcss.json
 
 package-lock.json
+.eslintcache
